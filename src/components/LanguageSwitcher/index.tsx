@@ -1,10 +1,11 @@
 import { useTranslation } from 'react-i18next'
 import { MenuItem, Select, FormControl, InputLabel } from '@mui/material'
+import './LanguageSwitcher.css'
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation()
   return (
-    <FormControl size="small" sx={{ minWidth: 120, mb: 2 }}>
+    <FormControl size="small" className="language-switcher">
       <InputLabel id="lang-select-label">Language</InputLabel>
       <Select
         labelId="lang-select-label"

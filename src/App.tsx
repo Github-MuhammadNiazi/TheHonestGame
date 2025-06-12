@@ -6,6 +6,7 @@ import './App.css'
 function App() {
   const [loading, setLoading] = useState(true)
   useEffect(() => {
+    // Implement data fetching or initialization logic here
     const timer = setTimeout(() => setLoading(false), 2000)
     return () => clearTimeout(timer)
   }, [])

@@ -1,15 +1,16 @@
 import { motion } from 'framer-motion'
+import './LoadingScreen.css'
 
 const LoadingScreen = () => {
   return (
-    <div style={{ display: 'flex', height: '100vh', alignItems: 'center', justifyContent: 'center', background: '#000' }}>
+    <div className="loading-screen">
       <motion.h1
         initial={{ clipPath: 'inset(0 100% 0 0)' }}
         animate={{ clipPath: 'inset(0 0 0 0)' }}
         transition={{ duration: 2, ease: 'easeInOut' }}
-        style={{ color: '#fff', fontSize: '3rem', fontWeight: 700, letterSpacing: 2 }}
+        className="loading-text"
       >
-        Loading...
+        Welcome to The Honest Game
       </motion.h1>
     </div>
   )
