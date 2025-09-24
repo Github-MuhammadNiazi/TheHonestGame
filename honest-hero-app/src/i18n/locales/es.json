@@ -1,0 +1,96 @@
+{
+  "app": {
+    "name": "Héroe Honesto",
+    "tagline": "Tu viaje para convertirte en un héroe honesto"
+  },
+  "navigation": {
+    "dashboard": "Panel",
+    "progress": "Progreso",
+    "taskHistory": "Historial de Tareas",
+    "myJourney": "Mi Viaje",
+    "profile": "Perfil"
+  },
+  "auth": {
+    "login": "Iniciar Sesión",
+    "signup": "Registrarse",
+    "logout": "Cerrar Sesión",
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar Contraseña",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "resetPassword": "Restablecer Contraseña",
+    "signInButton": "Iniciar Sesión",
+    "signUpButton": "Crear Cuenta",
+    "resetPasswordButton": "Enviar Correo de Restablecimiento",
+    "offlineUse": "Usar Sin Conexión",
+    "backToLogin": "Volver al Login",
+    "errors": {
+      "incorrectCredentials": "Correo electrónico o contraseña incorrectos",
+      "accountNotActive": "Tu cuenta no está activa, por favor contacta al soporte en support@honesthero.com",
+      "emailExists": "La cuenta de correo electrónico ya existe",
+      "passwordMismatch": "Las contraseñas no coinciden",
+      "invalidEmail": "Por favor ingresa una dirección de correo electrónico válida"
+    },
+    "success": {
+      "accountCreated": "Tu cuenta ha sido creada y está esperando aprobación. Por favor envía un correo a support@honesthero.com para cualquier consulta",
+      "resetEmailSent": "Correo de restablecimiento de contraseña enviado exitosamente"
+    }
+  },
+  "dashboard": {
+    "welcomeBack": "Bienvenido de vuelta",
+    "currentTask": "Tarea Actual",
+    "leaderboard": "Tabla de Clasificación",
+    "markComplete": "Marcar como Completado",
+    "confirmComplete": "¿Estás seguro de que quieres marcar esta tarea como completada?",
+    "signInForLeaderboard": "Inicia sesión para ver la tabla de clasificación",
+    "noCurrentTask": "No hay tarea actual disponible"
+  },
+  "progress": {
+    "currentRank": "Rango Actual",
+    "daysSinceStart": "Días Desde que Comenzó la Tarea Actual",
+    "totalTasks": "Total de Tareas Completadas",
+    "arcsCompleted": "Arcos Completados"
+  },
+  "taskHistory": {
+    "title": "Historial de Tareas",
+    "noTasks": "Aún no hay tareas completadas",
+    "storyUnlocked": "Historia Desbloqueada"
+  },
+  "journey": {
+    "title": "Mi Viaje",
+    "arcs": "Arcos",
+    "stories": "Historias",
+    "noArcs": "Aún no se han desbloqueado arcos"
+  },
+  "profile": {
+    "title": "Perfil",
+    "name": "Nombre",
+    "rank": "Rango",
+    "joinedDate": "Fecha de Ingreso",
+    "editProfile": "Editar Perfil",
+    "saveChanges": "Guardar Cambios"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "confirm": "Confirmar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "close": "Cerrar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "retry": "Reintentar",
+    "offline": "Sin Conexión",
+    "online": "En Línea",
+    "syncPending": "Sincronización Pendiente"
+  },
+  "offline": {
+    "title": "Estás sin conexión",
+    "message": "Algunas funciones pueden estar limitadas mientras estés sin conexión. Tus cambios se sincronizarán cuando te reconectes.",
+    "queuedChanges": "Tienes {{count}} cambios en cola que se sincronizarán cuando te reconectes."
+  }
+}

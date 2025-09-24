@@ -1,0 +1,96 @@
+{
+  "app": {
+    "name": "البطل الصادق",
+    "tagline": "رحلتك لتصبح بطلاً صادقاً"
+  },
+  "navigation": {
+    "dashboard": "لوحة التحكم",
+    "progress": "التقدم",
+    "taskHistory": "تاريخ المهام",
+    "myJourney": "رحلتي",
+    "profile": "الملف الشخصي"
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب",
+    "logout": "تسجيل الخروج",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "resetPassword": "إعادة تعيين كلمة المرور",
+    "signInButton": "تسجيل الدخول",
+    "signUpButton": "إنشاء حساب",
+    "resetPasswordButton": "إرسال بريد إعادة التعيين",
+    "offlineUse": "الاستخدام بدون اتصال",
+    "backToLogin": "العودة لتسجيل الدخول",
+    "errors": {
+      "incorrectCredentials": "بريد إلكتروني أو كلمة مرور خاطئة",
+      "accountNotActive": "حسابك غير نشط، يرجى التواصل مع الدعم على support@honesthero.com",
+      "emailExists": "حساب البريد الإلكتروني موجود بالفعل",
+      "passwordMismatch": "كلمات المرور غير متطابقة",
+      "invalidEmail": "يرجى إدخال عنوان بريد إلكتروني صحيح"
+    },
+    "success": {
+      "accountCreated": "تم إنشاء حسابك وهو في انتظار الموافقة. يرجى إرسال بريد إلكتروني إلى support@honesthero.com لأي استفسارات",
+      "resetEmailSent": "تم إرسال بريد إعادة تعيين كلمة المرور بنجاح"
+    }
+  },
+  "dashboard": {
+    "welcomeBack": "أهلاً بعودتك",
+    "currentTask": "المهمة الحالية",
+    "leaderboard": "لوحة المتصدرين",
+    "markComplete": "وضع علامة مكتمل",
+    "confirmComplete": "هل أنت متأكد من أنك تريد وضع علامة على هذه المهمة كمكتملة؟",
+    "signInForLeaderboard": "سجل الدخول لعرض لوحة المتصدرين",
+    "noCurrentTask": "لا توجد مهمة حالية متاحة"
+  },
+  "progress": {
+    "currentRank": "الرتبة الحالية",
+    "daysSinceStart": "الأيام منذ بدء المهمة الحالية",
+    "totalTasks": "إجمالي المهام المكتملة",
+    "arcsCompleted": "الأقواس المكتملة"
+  },
+  "taskHistory": {
+    "title": "تاريخ المهام",
+    "noTasks": "لا توجد مهام مكتملة بعد",
+    "storyUnlocked": "تم فتح القصة"
+  },
+  "journey": {
+    "title": "رحلتي",
+    "arcs": "الأقواس",
+    "stories": "القصص",
+    "noArcs": "لم يتم فتح أي أقواس بعد"
+  },
+  "profile": {
+    "title": "الملف الشخصي",
+    "name": "الاسم",
+    "rank": "الرتبة",
+    "joinedDate": "تاريخ الانضمام",
+    "editProfile": "تحرير الملف الشخصي",
+    "saveChanges": "حفظ التغييرات"
+  },
+  "common": {
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "success": "نجح",
+    "confirm": "تأكيد",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "edit": "تحرير",
+    "delete": "حذف",
+    "close": "إغلاق",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "retry": "إعادة المحاولة",
+    "offline": "بدون اتصال",
+    "online": "متصل",
+    "syncPending": "المزامنة معلقة"
+  },
+  "offline": {
+    "title": "أنت غير متصل",
+    "message": "قد تكون بعض الميزات محدودة أثناء عدم الاتصال. ستتم مزامنة تغييراتك عند إعادة الاتصال.",
+    "queuedChanges": "لديك {{count}} تغييرات في قائمة الانتظار ستتم مزامنتها عند إعادة الاتصال."
+  }
+}

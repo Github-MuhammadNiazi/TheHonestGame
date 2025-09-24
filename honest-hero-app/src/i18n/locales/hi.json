@@ -1,0 +1,96 @@
+{
+  "app": {
+    "name": "ईमानदार वीर",
+    "tagline": "ईमानदार वीर बनने की आपकी यात्रा"
+  },
+  "navigation": {
+    "dashboard": "डैशबोर्ड",
+    "progress": "प्रगति",
+    "taskHistory": "कार्य इतिहास",
+    "myJourney": "मेरी यात्रा",
+    "profile": "प्रोफ़ाइल"
+  },
+  "auth": {
+    "login": "लॉग इन",
+    "signup": "साइन अप",
+    "logout": "लॉग आउट",
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "confirmPassword": "पासवर्ड की पुष्टि करें",
+    "forgotPassword": "पासवर्ड भूल गए?",
+    "resetPassword": "पासवर्ड रीसेट करें",
+    "signInButton": "साइन इन करें",
+    "signUpButton": "खाता बनाएं",
+    "resetPasswordButton": "रीसेट ईमेल भेजें",
+    "offlineUse": "ऑफ़लाइन उपयोग",
+    "backToLogin": "लॉग इन पर वापस जाएं",
+    "errors": {
+      "incorrectCredentials": "गलत ईमेल या पासवर्ड",
+      "accountNotActive": "आपका खाता सक्रिय नहीं है, कृपया support@honesthero.com पर संपर्क करें",
+      "emailExists": "ईमेल खाता पहले से मौजूद है",
+      "passwordMismatch": "पासवर्ड मेल नहीं खाते",
+      "invalidEmail": "कृपया एक वैध ईमेल पता दर्ज करें"
+    },
+    "success": {
+      "accountCreated": "आपका खाता बनाया गया है और अनुमोदन की प्रतीक्षा में है। किसी भी प्रश्न के लिए कृपया support@honesthero.com पर ईमेल भेजें",
+      "resetEmailSent": "पासवर्ड रीसेट ईमेल सफलतापूर्वक भेजा गया"
+    }
+  },
+  "dashboard": {
+    "welcomeBack": "वापसी पर स्वागत है",
+    "currentTask": "वर्तमान कार्य",
+    "leaderboard": "लीडरबोर्ड",
+    "markComplete": "पूर्ण का चिह्न लगाएं",
+    "confirmComplete": "क्या आप वाकई इस कार्य को पूर्ण के रूप में चिह्नित करना चाहते हैं?",
+    "signInForLeaderboard": "लीडरबोर्ड देखने के लिए साइन इन करें",
+    "noCurrentTask": "कोई वर्तमान कार्य उपलब्ध नहीं"
+  },
+  "progress": {
+    "currentRank": "वर्तमान रैंक",
+    "daysSinceStart": "वर्तमान कार्य शुरू होने के बाद से दिन",
+    "totalTasks": "कुल पूर्ण कार्य",
+    "arcsCompleted": "पूर्ण किए गए आर्क"
+  },
+  "taskHistory": {
+    "title": "कार्य इतिहास",
+    "noTasks": "अभी तक कोई कार्य पूर्ण नहीं",
+    "storyUnlocked": "कहानी अनलॉक हुई"
+  },
+  "journey": {
+    "title": "मेरी यात्रा",
+    "arcs": "आर्क",
+    "stories": "कहानियां",
+    "noArcs": "अभी तक कोई आर्क अनलॉक नहीं हुआ"
+  },
+  "profile": {
+    "title": "प्रोफ़ाइल",
+    "name": "नाम",
+    "rank": "रैंक",
+    "joinedDate": "शामिल होने की तारीख",
+    "editProfile": "प्रोफ़ाइल संपादित करें",
+    "saveChanges": "परिवर्तन सहेजें"
+  },
+  "common": {
+    "loading": "लोड हो रहा है...",
+    "error": "त्रुटि",
+    "success": "सफलता",
+    "confirm": "पुष्टि करें",
+    "cancel": "रद्द करें",
+    "save": "सहेजें",
+    "edit": "संपादित करें",
+    "delete": "हटाएं",
+    "close": "बंद करें",
+    "back": "वापस",
+    "next": "अगला",
+    "previous": "पिछला",
+    "retry": "पुनः प्रयास",
+    "offline": "ऑफ़लाइन",
+    "online": "ऑनलाइन",
+    "syncPending": "सिंक लंबित"
+  },
+  "offline": {
+    "title": "आप ऑफ़लाइन हैं",
+    "message": "ऑफ़लाइन रहते समय कुछ सुविधाएं सीमित हो सकती हैं। पुनः कनेक्ट होने पर आपके परिवर्तन सिंक हो जाएंगे।",
+    "queuedChanges": "आपके पास {{count}} परिवर्तन हैं जो पुनः कनेक्ट होने पर सिंक हो जाएंगे।"
+  }
+}
