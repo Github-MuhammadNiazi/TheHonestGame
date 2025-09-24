@@ -1,0 +1,96 @@
+{
+  "app": {
+    "name": "Honest Hero",
+    "tagline": "Your journey to becoming an honest hero"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "progress": "Progress",
+    "taskHistory": "Task History",
+    "myJourney": "My Journey",
+    "profile": "Profile"
+  },
+  "auth": {
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot Password?",
+    "resetPassword": "Reset Password",
+    "signInButton": "Sign In",
+    "signUpButton": "Create Account",
+    "resetPasswordButton": "Send Reset Email",
+    "offlineUse": "Use Offline",
+    "backToLogin": "Back to Login",
+    "errors": {
+      "incorrectCredentials": "Incorrect email or password",
+      "accountNotActive": "Your account is not active, please reach out to support at support@honesthero.com",
+      "emailExists": "Email account already exists",
+      "passwordMismatch": "Passwords do not match",
+      "invalidEmail": "Please enter a valid email address"
+    },
+    "success": {
+      "accountCreated": "Your account has been created and awaiting approval. Please send an email to support@honesthero.com for any queries",
+      "resetEmailSent": "Password reset email sent successfully"
+    }
+  },
+  "dashboard": {
+    "welcomeBack": "Welcome back",
+    "currentTask": "Current Task",
+    "leaderboard": "Leaderboard",
+    "markComplete": "Mark Complete",
+    "confirmComplete": "Are you sure you want to mark this task as complete?",
+    "signInForLeaderboard": "Sign in to view leaderboard",
+    "noCurrentTask": "No current task available"
+  },
+  "progress": {
+    "currentRank": "Current Rank",
+    "daysSinceStart": "Days Since Current Task Started",
+    "totalTasks": "Total Tasks Completed",
+    "arcsCompleted": "Arcs Completed"
+  },
+  "taskHistory": {
+    "title": "Task History",
+    "noTasks": "No completed tasks yet",
+    "storyUnlocked": "Story Unlocked"
+  },
+  "journey": {
+    "title": "My Journey",
+    "arcs": "Arcs",
+    "stories": "Stories",
+    "noArcs": "No arcs unlocked yet"
+  },
+  "profile": {
+    "title": "Profile",
+    "name": "Name",
+    "rank": "Rank",
+    "joinedDate": "Joined Date",
+    "editProfile": "Edit Profile",
+    "saveChanges": "Save Changes"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "retry": "Retry",
+    "offline": "Offline",
+    "online": "Online",
+    "syncPending": "Sync Pending"
+  },
+  "offline": {
+    "title": "You are offline",
+    "message": "Some features may be limited while offline. Your changes will be synced when you reconnect.",
+    "queuedChanges": "You have {{count}} queued changes that will be synced when you reconnect."
+  }
+}
