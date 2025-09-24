@@ -18,7 +18,7 @@
     direction: rtl;
   }
 }
-
+  
 @layer components {
   /* Custom scrollbar */
   .scrollbar-thin {
