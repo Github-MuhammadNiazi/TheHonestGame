@@ -140,6 +140,13 @@ export const AuthProvider = ({ children }) => {
     return { success: true }
   }
 
+  const clearOfflineMode = () => {
+    if (user && user.isOffline && !user.id) {
+      setUser(null)
+      storageService.clear()
+    }
+  }
+
   const syncOfflineChanges = async () => {
     if (!isOnline || !user?.id) return
 
@@ -166,6 +173,7 @@ export const AuthProvider = ({ children }) => {
     resetPassword,
     logout,
     useOffline,
+    clearOfflineMode,
     checkSession,
     syncOfflineChanges
   }

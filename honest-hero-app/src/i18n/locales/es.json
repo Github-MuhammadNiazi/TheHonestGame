@@ -19,21 +19,40 @@
     "confirmPassword": "Confirmar Contraseña",
     "forgotPassword": "¿Olvidaste tu contraseña?",
     "resetPassword": "Restablecer Contraseña",
+    "resetPasswordDescription": "Ingresa tu dirección de correo electrónico y te enviaremos un enlace para restablecer tu contraseña.",
     "signInButton": "Iniciar Sesión",
     "signUpButton": "Crear Cuenta",
     "resetPasswordButton": "Enviar Correo de Restablecimiento",
     "offlineUse": "Usar Sin Conexión",
     "backToLogin": "Volver al Login",
+    "switchToOnlineMode": "Cambiar a Modo En Línea",
+    "continueOffline": "Continuar Sin Conexión",
+    "signInAndSync": "Iniciar Sesión y Sincronizar",
+    "createAccountAndSync": "Crear Cuenta y Sincronizar",
+    "currentlyOffline": "Actualmente en modo sin conexión",
+    "offlineModeMessage": "Puedes iniciar sesión para sincronizar tu progreso o continuar usando sin conexión.",
+    "offlineModeSignupMessage": "Puedes crear una cuenta para sincronizar tu progreso o continuar usando sin conexión.",
+    "offlineModeResetMessage": "El restablecimiento de contraseña requiere conexión a internet. Cambia a modo en línea o continúa usando sin conexión.",
+    "dontHaveAccount": "¿No tienes una cuenta?",
+    "alreadyHaveAccount": "¿Ya tienes una cuenta?",
     "errors": {
       "incorrectCredentials": "Correo electrónico o contraseña incorrectos",
       "accountNotActive": "Tu cuenta no está activa, por favor contacta al soporte en support@honesthero.com",
       "emailExists": "La cuenta de correo electrónico ya existe",
       "passwordMismatch": "Las contraseñas no coinciden",
-      "invalidEmail": "Por favor ingresa una dirección de correo electrónico válida"
+      "invalidEmail": "Por favor ingresa una dirección de correo electrónico válida",
+      "emailRequired": "El correo electrónico es obligatorio",
+      "passwordRequired": "La contraseña es obligatoria",
+      "nameRequired": "El nombre es obligatorio",
+      "confirmPasswordRequired": "Por favor confirma tu contraseña",
+      "passwordTooShort": "La contraseña debe tener al menos 6 caracteres",
+      "unexpectedError": "Ocurrió un error inesperado"
     },
     "success": {
       "accountCreated": "Tu cuenta ha sido creada y está esperando aprobación. Por favor envía un correo a support@honesthero.com para cualquier consulta",
-      "resetEmailSent": "Correo de restablecimiento de contraseña enviado exitosamente"
+      "accountCreatedTitle": "¡Cuenta Creada!",
+      "resetEmailSent": "Correo de restablecimiento de contraseña enviado exitosamente",
+      "resetEmailSentTitle": "¡Correo de Restablecimiento Enviado!"
     }
   },
   "dashboard": {
@@ -43,7 +62,13 @@
     "markComplete": "Marcar como Completado",
     "confirmComplete": "¿Estás seguro de que quieres marcar esta tarea como completada?",
     "signInForLeaderboard": "Inicia sesión para ver la tabla de clasificación",
-    "noCurrentTask": "No hay tarea actual disponible"
+    "noCurrentTask": "No hay tarea actual disponible",
+    "offlineMode": {
+      "title": "Estás usando el Modo Sin Conexión",
+      "message": "Crea una cuenta o inicia sesión para sincronizar tu progreso entre dispositivos y desbloquear todas las funciones.",
+      "signInToSync": "Iniciar Sesión para Sincronizar",
+      "createAccount": "Crear Cuenta"
+    }
   },
   "progress": {
     "currentRank": "Rango Actual",
@@ -86,11 +111,15 @@
     "retry": "Reintentar",
     "offline": "Sin Conexión",
     "online": "En Línea",
-    "syncPending": "Sincronización Pendiente"
+    "syncPending": "Sincronización Pendiente",
+    "or": "o"
   },
   "offline": {
     "title": "Estás sin conexión",
     "message": "Algunas funciones pueden estar limitadas mientras estés sin conexión. Tus cambios se sincronizarán cuando te reconectes.",
-    "queuedChanges": "Tienes {{count}} cambios en cola que se sincronizarán cuando te reconectes."
+    "queuedChanges": "Tienes {{count}} cambios en cola que se sincronizarán cuando te reconectes.",
+    "usingOfflineMode": "Usando Modo Sin Conexión",
+    "signInToSyncMessage": "Inicia sesión para sincronizar tu progreso y desbloquear todas las funciones.",
+    "signIn": "Iniciar Sesión"
   }
 }

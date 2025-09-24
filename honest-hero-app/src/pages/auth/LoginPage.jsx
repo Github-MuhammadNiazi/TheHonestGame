@@ -7,7 +7,7 @@ import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/outline'
 
 const LoginPage = () => {
   const { t } = useTranslation()
-  const { login, useOffline } = useAuth()
+  const { login, useOffline, user, clearOfflineMode } = useAuth()
   const navigate = useNavigate()
   
   const [formData, setFormData] = useState({
@@ -37,13 +37,13 @@ const LoginPage = () => {
     const newErrors = {}
     
     if (!formData.email) {
-      newErrors.email = 'Email is required'
+      newErrors.email = t('auth.errors.emailRequired')
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = t('auth.errors.invalidEmail')
     }
     
     if (!formData.password) {
-      newErrors.password = 'Password is required'
+      newErrors.password = t('auth.errors.passwordRequired')
     }
     
     return newErrors
@@ -70,7 +70,7 @@ const LoginPage = () => {
         setErrors({ general: result.error })
       }
     } catch (error) {
-      setErrors({ general: 'An unexpected error occurred' })
+      setErrors({ general: t('auth.errors.unexpectedError') })
     } finally {
       setLoading(false)
     }
@@ -80,6 +80,14 @@ const LoginPage = () => {
     useOffline()
     navigate('/dashboard')
   }
+
+  const handleSwitchToOnline = () => {
+    clearOfflineMode()
+    // Stay on current page to allow user to sign in
+  }
+
+  // Check if user is currently in offline mode
+  const isOfflineMode = user && user.isOffline && !user.id
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
@@ -118,6 +126,17 @@ const LoginPage = () => {
                 animate={{ opacity: 1, scale: 1 }}
               >
                 {errors.general}
+              </motion.div>
+            )}
+
+            {isOfflineMode && (
+              <motion.div 
+                className="bg-blue-50 border border-blue-200 text-blue-700 px-4 py-3 rounded-lg"
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+              >
+                <p className="font-medium">{t('auth.currentlyOffline')}</p>
+                <p className="text-sm mt-1">{t('auth.offlineModeMessage')}</p>
               </motion.div>
             )}
 
@@ -190,10 +209,10 @@ const LoginPage = () => {
               {loading ? (
                 <div className="flex items-center">
                   <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></div>
-                  Loading...
+                  {t('common.loading')}
                 </div>
               ) : (
-                t('auth.signInButton')
+                isOfflineMode ? t('auth.signInAndSync') : t('auth.signInButton')
               )}
             </motion.button>
           </div>
@@ -207,28 +226,55 @@ const LoginPage = () => {
             </Link>
           </div>
 
-          <div className="relative">
-            <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t border-gray-300" />
-            </div>
-            <div className="relative flex justify-center text-sm">
-              <span className="px-2 bg-gray-50 text-gray-500">{t('common.or')}</span>
-            </div>
-          </div>
+          {!isOfflineMode && (
+            <>
+              <div className="relative">
+                <div className="absolute inset-0 flex items-center">
+                  <div className="w-full border-t border-gray-300" />
+                </div>
+                <div className="relative flex justify-center text-sm">
+                  <span className="px-2 bg-gray-50 text-gray-500">{t('common.or')}</span>
+                </div>
+              </div>
 
-          <motion.button
-            type="button"
-            onClick={handleOfflineUse}
-            className="w-full flex justify-center py-2 px-4 border border-gray-300 text-sm font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            {t('auth.offlineUse')}
-          </motion.button>
+              <motion.button
+                type="button"
+                onClick={handleOfflineUse}
+                className="w-full flex justify-center py-2 px-4 border border-gray-300 text-sm font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                {t('auth.offlineUse')}
+              </motion.button>
+            </>
+          )}
+
+          {isOfflineMode && (
+            <div className="flex space-x-3">
+              <motion.button
+                type="button"
+                onClick={handleSwitchToOnline}
+                className="flex-1 flex justify-center py-2 px-4 border border-gray-300 text-sm font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                {t('auth.switchToOnlineMode')}
+              </motion.button>
+              <motion.button
+                type="button"
+                onClick={() => navigate('/dashboard')}
+                className="flex-1 flex justify-center py-2 px-4 border border-primary-600 text-sm font-medium rounded-lg text-primary-600 bg-white hover:bg-primary-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                {t('auth.continueOffline')}
+              </motion.button>
+            </div>
+          )}
 
           <div className="text-center">
             <p className="text-sm text-gray-600">
-              Don't have an account?{' '}
+              {t('auth.dontHaveAccount')}{' '}
               <Link 
                 to="/signup" 
                 className="font-medium text-primary-600 hover:text-primary-500"

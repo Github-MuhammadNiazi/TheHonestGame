@@ -42,7 +42,10 @@ const PublicRoute = ({ children }) => {
     return <LoadingSpinner />
   }
   
-  if (user) {
+  // Allow offline users to access auth pages if they haven't fully committed to offline mode
+  // or if they're specifically trying to switch to online mode
+  if (user && user.id) {
+    // Only redirect online users with actual accounts
     return <Navigate to="/dashboard" replace />
   }
   

@@ -19,21 +19,40 @@
     "confirmPassword": "تأكيد كلمة المرور",
     "forgotPassword": "نسيت كلمة المرور؟",
     "resetPassword": "إعادة تعيين كلمة المرور",
+    "resetPasswordDescription": "أدخل عنوان بريدك الإلكتروني وسنرسل لك رابطاً لإعادة تعيين كلمة المرور الخاصة بك.",
     "signInButton": "تسجيل الدخول",
     "signUpButton": "إنشاء حساب",
     "resetPasswordButton": "إرسال بريد إعادة التعيين",
     "offlineUse": "الاستخدام بدون اتصال",
     "backToLogin": "العودة لتسجيل الدخول",
+    "switchToOnlineMode": "التبديل إلى الوضع المتصل",
+    "continueOffline": "المتابعة بدون اتصال",
+    "signInAndSync": "تسجيل الدخول والمزامنة",
+    "createAccountAndSync": "إنشاء حساب والمزامنة",
+    "currentlyOffline": "حالياً في وضع عدم الاتصال",
+    "offlineModeMessage": "يمكنك تسجيل الدخول لمزامنة تقدمك أو المتابعة باستخدام وضع عدم الاتصال.",
+    "offlineModeSignupMessage": "يمكنك إنشاء حساب لمزامنة تقدمك أو المتابعة باستخدام وضع عدم الاتصال.",
+    "offlineModeResetMessage": "إعادة تعيين كلمة المرور يتطلب الاتصال بالإنترنت. التبديل إلى الوضع المتصل أو المتابعة بدون اتصال.",
+    "dontHaveAccount": "ليس لديك حساب؟",
+    "alreadyHaveAccount": "لديك حساب بالفعل؟",
     "errors": {
       "incorrectCredentials": "بريد إلكتروني أو كلمة مرور خاطئة",
       "accountNotActive": "حسابك غير نشط، يرجى التواصل مع الدعم على support@honesthero.com",
       "emailExists": "حساب البريد الإلكتروني موجود بالفعل",
       "passwordMismatch": "كلمات المرور غير متطابقة",
-      "invalidEmail": "يرجى إدخال عنوان بريد إلكتروني صحيح"
+      "invalidEmail": "يرجى إدخال عنوان بريد إلكتروني صحيح",
+      "emailRequired": "البريد الإلكتروني مطلوب",
+      "passwordRequired": "كلمة المرور مطلوبة",
+      "nameRequired": "الاسم مطلوب",
+      "confirmPasswordRequired": "يرجى تأكيد كلمة المرور الخاصة بك",
+      "passwordTooShort": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+      "unexpectedError": "حدث خطأ غير متوقع"
     },
     "success": {
       "accountCreated": "تم إنشاء حسابك وهو في انتظار الموافقة. يرجى إرسال بريد إلكتروني إلى support@honesthero.com لأي استفسارات",
-      "resetEmailSent": "تم إرسال بريد إعادة تعيين كلمة المرور بنجاح"
+      "accountCreatedTitle": "تم إنشاء الحساب!",
+      "resetEmailSent": "تم إرسال بريد إعادة تعيين كلمة المرور بنجاح",
+      "resetEmailSentTitle": "تم إرسال بريد إعادة التعيين!"
     }
   },
   "dashboard": {
@@ -43,7 +62,13 @@
     "markComplete": "وضع علامة مكتمل",
     "confirmComplete": "هل أنت متأكد من أنك تريد وضع علامة على هذه المهمة كمكتملة؟",
     "signInForLeaderboard": "سجل الدخول لعرض لوحة المتصدرين",
-    "noCurrentTask": "لا توجد مهمة حالية متاحة"
+    "noCurrentTask": "لا توجد مهمة حالية متاحة",
+    "offlineMode": {
+      "title": "أنت تستخدم الوضع غير المتصل",
+      "message": "أنشئ حساباً أو سجل الدخول لمزامنة تقدمك عبر الأجهزة وفتح جميع الميزات.",
+      "signInToSync": "تسجيل الدخول للمزامنة",
+      "createAccount": "إنشاء حساب"
+    }
   },
   "progress": {
     "currentRank": "الرتبة الحالية",
@@ -86,11 +111,15 @@
     "retry": "إعادة المحاولة",
     "offline": "بدون اتصال",
     "online": "متصل",
-    "syncPending": "المزامنة معلقة"
+    "syncPending": "المزامنة معلقة",
+    "or": "أو"
   },
   "offline": {
     "title": "أنت غير متصل",
     "message": "قد تكون بعض الميزات محدودة أثناء عدم الاتصال. ستتم مزامنة تغييراتك عند إعادة الاتصال.",
-    "queuedChanges": "لديك {{count}} تغييرات في قائمة الانتظار ستتم مزامنتها عند إعادة الاتصال."
+    "queuedChanges": "لديك {{count}} تغييرات في قائمة الانتظار ستتم مزامنتها عند إعادة الاتصال.",
+    "usingOfflineMode": "استخدام الوضع غير المتصل",
+    "signInToSyncMessage": "سجل الدخول لمزامنة تقدمك وفتح جميع الميزات.",
+    "signIn": "تسجيل الدخول"
   }
 }

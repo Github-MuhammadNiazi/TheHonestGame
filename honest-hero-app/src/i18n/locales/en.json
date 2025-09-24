@@ -19,21 +19,40 @@
     "confirmPassword": "Confirm Password",
     "forgotPassword": "Forgot Password?",
     "resetPassword": "Reset Password",
+    "resetPasswordDescription": "Enter your email address and we'll send you a link to reset your password.",
     "signInButton": "Sign In",
     "signUpButton": "Create Account",
     "resetPasswordButton": "Send Reset Email",
     "offlineUse": "Use Offline",
     "backToLogin": "Back to Login",
+    "switchToOnlineMode": "Switch to Online Mode",
+    "continueOffline": "Continue Offline",
+    "signInAndSync": "Sign In & Sync",
+    "createAccountAndSync": "Create Account & Sync",
+    "currentlyOffline": "Currently in offline mode",
+    "offlineModeMessage": "You can sign in to sync your progress or continue using offline.",
+    "offlineModeSignupMessage": "You can create an account to sync your progress or continue using offline.",
+    "offlineModeResetMessage": "Password reset requires internet connection. Switch to online mode or continue using offline.",
+    "dontHaveAccount": "Don't have an account?",
+    "alreadyHaveAccount": "Already have an account?",
     "errors": {
       "incorrectCredentials": "Incorrect email or password",
       "accountNotActive": "Your account is not active, please reach out to support at support@honesthero.com",
       "emailExists": "Email account already exists",
       "passwordMismatch": "Passwords do not match",
-      "invalidEmail": "Please enter a valid email address"
+      "invalidEmail": "Please enter a valid email address",
+      "emailRequired": "Email is required",
+      "passwordRequired": "Password is required",
+      "nameRequired": "Name is required",
+      "confirmPasswordRequired": "Please confirm your password",
+      "passwordTooShort": "Password must be at least 6 characters",
+      "unexpectedError": "An unexpected error occurred"
     },
     "success": {
       "accountCreated": "Your account has been created and awaiting approval. Please send an email to support@honesthero.com for any queries",
-      "resetEmailSent": "Password reset email sent successfully"
+      "accountCreatedTitle": "Account Created!",
+      "resetEmailSent": "Password reset email sent successfully",
+      "resetEmailSentTitle": "Reset Email Sent!"
     }
   },
   "dashboard": {
@@ -43,7 +62,13 @@
     "markComplete": "Mark Complete",
     "confirmComplete": "Are you sure you want to mark this task as complete?",
     "signInForLeaderboard": "Sign in to view leaderboard",
-    "noCurrentTask": "No current task available"
+    "noCurrentTask": "No current task available",
+    "offlineMode": {
+      "title": "You're using Offline Mode",
+      "message": "Create an account or sign in to sync your progress across devices and unlock all features.",
+      "signInToSync": "Sign In to Sync",
+      "createAccount": "Create Account"
+    }
   },
   "progress": {
     "currentRank": "Current Rank",
@@ -92,6 +117,9 @@
   "offline": {
     "title": "You are offline",
     "message": "Some features may be limited while offline. Your changes will be synced when you reconnect.",
-    "queuedChanges": "You have {{count}} queued changes that will be synced when you reconnect."
+    "queuedChanges": "You have {{count}} queued changes that will be synced when you reconnect.",
+    "usingOfflineMode": "Using Offline Mode",
+    "signInToSyncMessage": "Sign in to sync your progress and unlock all features.",
+    "signIn": "Sign In"
   }
 }

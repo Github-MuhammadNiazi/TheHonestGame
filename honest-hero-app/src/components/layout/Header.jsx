@@ -8,17 +8,25 @@ import {
   UserCircleIcon,
   ArrowRightOnRectangleIcon,
   WifiIcon,
-  SignalSlashIcon
+  SignalSlashIcon,
+  GlobeAltIcon
 } from '@heroicons/react/24/outline'
 import LanguageSelector from './LanguageSelector'
 
 const Header = ({ onMenuClick }) => {
-  const { user, logout, isOnline } = useAuth()
+  const { user, logout, isOnline, clearOfflineMode } = useAuth()
   const { t } = useTranslation()
 
   const handleLogout = async () => {
     await logout()
   }
+
+  const handleSwitchToOnline = () => {
+    clearOfflineMode()
+  }
+
+  // Check if user is in offline mode (offline user without real account)
+  const isOfflineMode = user && user.isOffline && !user.id
 
   return (
     <header className="bg-white shadow-sm border-b border-gray-200">
@@ -94,6 +102,22 @@ const Header = ({ onMenuClick }) => {
                 leaveTo="transform opacity-0 scale-95"
               >
                 <Menu.Panel className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                  {isOfflineMode && (
+                    <Menu.Item>
+                      {({ active }) => (
+                        <button
+                          onClick={handleSwitchToOnline}
+                          className={`${
+                            active ? 'bg-gray-100' : ''
+                          } flex w-full items-center px-4 py-2 text-sm text-gray-700`}
+                        >
+                          <GlobeAltIcon className="mr-3 h-4 w-4" />
+                          {t('auth.switchToOnlineMode')}
+                        </button>
+                      )}
+                    </Menu.Item>
+                  )}
+                  
                   <Menu.Item>
                     {({ active }) => (
                       <button

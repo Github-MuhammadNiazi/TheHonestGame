@@ -19,21 +19,40 @@
     "confirmPassword": "पासवर्ड की पुष्टि करें",
     "forgotPassword": "पासवर्ड भूल गए?",
     "resetPassword": "पासवर्ड रीसेट करें",
+    "resetPasswordDescription": "अपना ईमेल पता दर्ज करें और हम आपको पासवर्ड रीसेट करने के लिए एक लिंक भेजेंगे।",
     "signInButton": "साइन इन करें",
     "signUpButton": "खाता बनाएं",
     "resetPasswordButton": "रीसेट ईमेल भेजें",
     "offlineUse": "ऑफ़लाइन उपयोग",
     "backToLogin": "लॉग इन पर वापस जाएं",
+    "switchToOnlineMode": "ऑनलाइन मोड पर स्विच करें",
+    "continueOffline": "ऑफ़लाइन जारी रखें",
+    "signInAndSync": "साइन इन करें और सिंक करें",
+    "createAccountAndSync": "खाता बनाएं और सिंक करें",
+    "currentlyOffline": "वर्तमान में ऑफ़लाइन मोड में",
+    "offlineModeMessage": "आप अपनी प्रगति को सिंक करने के लिए साइन इन कर सकते हैं या ऑफ़लाइन उपयोग जारी रख सकते हैं।",
+    "offlineModeSignupMessage": "आप अपनी प्रगति को सिंक करने के लिए खाता बना सकते हैं या ऑफ़लाइन उपयोग जारी रख सकते हैं।",
+    "offlineModeResetMessage": "पासवर्ड रीसेट के लिए इंटरनेट कनेक्शन की आवश्यकता है। ऑनलाइन मोड पर स्विच करें या ऑफ़लाइन जारी रखें।",
+    "dontHaveAccount": "खाता नहीं है?",
+    "alreadyHaveAccount": "पहले से खाता है?",
     "errors": {
       "incorrectCredentials": "गलत ईमेल या पासवर्ड",
       "accountNotActive": "आपका खाता सक्रिय नहीं है, कृपया support@honesthero.com पर संपर्क करें",
       "emailExists": "ईमेल खाता पहले से मौजूद है",
       "passwordMismatch": "पासवर्ड मेल नहीं खाते",
-      "invalidEmail": "कृपया एक वैध ईमेल पता दर्ज करें"
+      "invalidEmail": "कृपया एक वैध ईमेल पता दर्ज करें",
+      "emailRequired": "ईमेल आवश्यक है",
+      "passwordRequired": "पासवर्ड आवश्यक है",
+      "nameRequired": "नाम आवश्यक है",
+      "confirmPasswordRequired": "कृपया अपने पासवर्ड की पुष्टि करें",
+      "passwordTooShort": "पासवर्ड कम से कम 6 अक्षर का होना चाहिए",
+      "unexpectedError": "एक अप्रत्याशित त्रुटि हुई"
     },
     "success": {
       "accountCreated": "आपका खाता बनाया गया है और अनुमोदन की प्रतीक्षा में है। किसी भी प्रश्न के लिए कृपया support@honesthero.com पर ईमेल भेजें",
-      "resetEmailSent": "पासवर्ड रीसेट ईमेल सफलतापूर्वक भेजा गया"
+      "accountCreatedTitle": "खाता बना दिया गया!",
+      "resetEmailSent": "पासवर्ड रीसेट ईमेल सफलतापूर्वक भेजा गया",
+      "resetEmailSentTitle": "रीसेट ईमेल भेजा गया!"
     }
   },
   "dashboard": {
@@ -43,7 +62,13 @@
     "markComplete": "पूर्ण का चिह्न लगाएं",
     "confirmComplete": "क्या आप वाकई इस कार्य को पूर्ण के रूप में चिह्नित करना चाहते हैं?",
     "signInForLeaderboard": "लीडरबोर्ड देखने के लिए साइन इन करें",
-    "noCurrentTask": "कोई वर्तमान कार्य उपलब्ध नहीं"
+    "noCurrentTask": "कोई वर्तमान कार्य उपलब्ध नहीं",
+    "offlineMode": {
+      "title": "आप ऑफ़लाइन मोड का उपयोग कर रहे हैं",
+      "message": "अपनी प्रगति को डिवाइसों में सिंक करने और सभी सुविधाओं को अनलॉक करने के लिए खाता बनाएं या साइन इन करें।",
+      "signInToSync": "सिंक के लिए साइन इन करें",
+      "createAccount": "खाता बनाएं"
+    }
   },
   "progress": {
     "currentRank": "वर्तमान रैंक",
@@ -86,11 +111,15 @@
     "retry": "पुनः प्रयास",
     "offline": "ऑफ़लाइन",
     "online": "ऑनलाइन",
-    "syncPending": "सिंक लंबित"
+    "syncPending": "सिंक लंबित",
+    "or": "या"
   },
   "offline": {
     "title": "आप ऑफ़लाइन हैं",
     "message": "ऑफ़लाइन रहते समय कुछ सुविधाएं सीमित हो सकती हैं। पुनः कनेक्ट होने पर आपके परिवर्तन सिंक हो जाएंगे।",
-    "queuedChanges": "आपके पास {{count}} परिवर्तन हैं जो पुनः कनेक्ट होने पर सिंक हो जाएंगे।"
+    "queuedChanges": "आपके पास {{count}} परिवर्तन हैं जो पुनः कनेक्ट होने पर सिंक हो जाएंगे।",
+    "usingOfflineMode": "ऑफ़लाइन मोड का उपयोग",
+    "signInToSyncMessage": "अपनी प्रगति को सिंक करने और सभी सुविधाओं को अनलॉक करने के लिए साइन इन करें।",
+    "signIn": "साइन इन"
   }
 }
