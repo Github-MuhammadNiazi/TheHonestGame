@@ -86,7 +86,8 @@
     "retry": "Retry",
     "offline": "Offline",
     "online": "Online",
-    "syncPending": "Sync Pending"
+    "syncPending": "Sync Pending",
+    "or": "or"
   },
   "offline": {
     "title": "You are offline",
